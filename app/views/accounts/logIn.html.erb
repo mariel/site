@@ -1,0 +1,18 @@
+<h1>LogIn</h1>
+<%= form_with scope: @account do |form| %>
+ 
+  <p>
+    <%= form.label :username %><br>
+    <%= form.text_field :username %>
+  </p>
+ 
+  <p>
+    <%= form.label :password %><br>
+    <%= form.password_field :password %>
+  </p>
+ 
+  <p>
+    <%=link_to 'Login', method: :login %>
+  </p>
+ 
+<% end %>
